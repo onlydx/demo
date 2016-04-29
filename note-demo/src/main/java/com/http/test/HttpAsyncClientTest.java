@@ -11,11 +11,15 @@ import org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager;
 import org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor;
 import org.apache.http.nio.reactor.ConnectingIOReactor;
 import org.apache.http.nio.reactor.IOReactorException;
+import org.junit.Test;
 
 public class HttpAsyncClientTest {
+	
+	
+	
 
-	public static void main(String[] args) throws IOReactorException, InterruptedException {
-
+	@Test
+	public void test001() throws IOReactorException, InterruptedException {
 		ConnectingIOReactor ioReactor = new DefaultConnectingIOReactor();
 		PoolingNHttpClientConnectionManager cm = new PoolingNHttpClientConnectionManager(ioReactor);
 		cm.setMaxTotal(100);
@@ -44,5 +48,4 @@ public class HttpAsyncClientTest {
 		}
 		latch.await();
 	}
-
 }
