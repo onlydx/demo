@@ -50,8 +50,9 @@ public class HttpAsyncClientTest {
 
 	@Test
 	public void test002() throws Exception {
+		
 		ChuanglanSMS client = new ChuanglanSMS("N2424471", "af923819");
-		CloseableHttpResponse response = client.sendMessage("18585543142", "");
+		CloseableHttpResponse response = client.sendMessage("18585543142", "你的验证码是：20512051");
 		if (response != null && response.getStatusLine().getStatusCode() == 200) {
 			System.out.println(EntityUtils.toString(response.getEntity()));
 		}
