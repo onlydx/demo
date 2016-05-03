@@ -11,6 +11,6 @@ public class MtmasWSTest {
 		factoryBean.setServiceClass(MasWS.class);
 		factoryBean.setAddress("http://211.139.6.203:8010/mtmasws/service/MasWS?wsdl");
 		MasWS client = (MasWS) factoryBean.create();
-		System.out.println(client.sendMsgs("用户名", "密码", "手机号", "信息内容", "", "任务名", null, null));
+		System.out.println(client.sendMsgs("gycgxt", "gycgxt08927", "18502337591", "短信测试", "", "测试任务", null, null));
 	}
 }
