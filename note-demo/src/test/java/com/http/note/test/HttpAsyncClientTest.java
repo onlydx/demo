@@ -1,4 +1,4 @@
-package com.http.test;
+package com.http.note.test;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -14,6 +14,8 @@ import org.apache.http.nio.reactor.ConnectingIOReactor;
 import org.apache.http.nio.reactor.IOReactorException;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
+
+import com.http.test.ChuanglanSMS;
 
 public class HttpAsyncClientTest {
 
