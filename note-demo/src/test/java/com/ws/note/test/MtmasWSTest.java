@@ -2,7 +2,7 @@ package com.ws.note.test;
 
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
-import com.ws.test.MasWS;
+import com.mtmasws.service.MasWS;
 
 public class MtmasWSTest {
 
