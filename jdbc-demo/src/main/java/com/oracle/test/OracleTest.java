@@ -43,10 +43,7 @@ public class OracleTest {
 			// 将指针移到下一行，判断rs中是否有数据
 			if (rs.next()) {
 				// 输出查询结果
-				System.out.println("查询到名为【" + rs.getString("streetname") + "】的信息，其密码为：");
-			} else {
-				// 输出查询结果
-				System.out.println("未查询到用户名为【" + rs.getString("streetname") + "】的信息");
+				System.out.println("查询到名为【" + rs.getString("streetname") + "】的信息");
 			}
 
 		} catch (ClassNotFoundException e) {
@@ -72,6 +69,6 @@ public class OracleTest {
 	}
 
 	public static void main(String[] args) {
-		new OracleTest().SelectUser(); 
+		new OracleTest().SelectUser();
 	}
 }
